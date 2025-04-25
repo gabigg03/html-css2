@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse; /* é usado pra juntar os elementos da tabela */
+        }
+        td{
+            border: 2px solid pink;
+           padding: 1vh;
+        }
+        tr.rosa{
+            background-color: rgba(255, 192, 203, 0.432);
+        }
+        tr.amarelo{
+            background-color: rgba(255, 255, 0, 0.26);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira tabela</h1>
+    <!-- 
+    hierarquia de tabela (simples)
+    TABLE = tabela
+       <tr> TABLE ROW = linha de tabela 
+            TABLE HEADER = cabeçalho de tabela
+                <td> TABLE DATA = dado da tabela
+   -->
+    <table>
+        <tr class="rosa">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="amarelo">
+            <td>A2</td>
+            <td>B2</td>
+            <TD>C2</TD>
+        </tr>
+        <tr class="rosa">
+            <td>A3</td>
+            <TD>B3</TD>
+            <TD>C3</TD>
+        </tr>
+        <TR class="amarelo">
+            <TD>A4</TD>
+            <TD>B4</TD>
+            <TD>C4</TD>
+        </TR>
+    </table>
+</body>
+</html>
