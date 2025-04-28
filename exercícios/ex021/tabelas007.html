@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tabela</title>
+<style>
+     body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 600px;
+        border-collapse: collapse;
+    }
+    td, th{ 
+        text-align: center;
+        border: 1px solid purple;
+        padding: 5px;
+        }
+        th{
+        background-color: rgba(238, 130, 238, 0.466);
+        color: white;
+        }
+        caption{
+        font-size: 2em;
+        background-color: violet;
+        padding: 3px;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px;
+        color: white;
+        font-weight: bold;
+        }
+        .cnome{ 
+            background-color: pink;
+        }
+        .cidade{
+            background-color: rgb(56, 209, 201);
+        }
+</style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade" span="2"> 
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gabriela</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Kátia</td>
+                <td>F</td>
+                <td>55</td>
+                <td>Bancaria</td>
+            </tr>
+            <tr>
+                <td>Marcella</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Desempregada</td>
+                
+            </tr>
+            <tr>
+                <td>Adriana</td>
+                <td>F</td>
+                <td>51</td>
+                <td>Funcionaria pública</td>
+            </tr>
+            <tr>
+               <td>Eduardo</td>
+               <td>M</td>
+               <td>--</td>
+               <td>Funcionario público</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>M</td>
+                <td>--</td>
+                <td>Advogado</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
